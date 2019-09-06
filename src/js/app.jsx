@@ -1,7 +1,7 @@
 import React from 'react';
-import SearchEntries from './components/Search/SearchEntries';
-import HistoryInfo from './components/HistoryInfo/HistoryInfo'
-import WeatherInfo from './components/WetherInfo/WeatherInfo'
+import SearchEntries from './components/Search';
+import HistoryInfo from './components/HistoryInfo'
+import WeatherInfo from './components/WeatherInfo'
 
 export default class App extends React.Component {
   render() {

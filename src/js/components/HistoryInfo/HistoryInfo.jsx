@@ -1,10 +1,9 @@
 import React from 'react';
 
 export default class HistoryInfo extends React.Component {
-  constructor(props){
-    super(props);
-  }
+
   render(){
+    const { cityLists }= this.props;
     return (
       <div className='card border-info mb-3'>
         <div className='card-header text-white bg-info'>Search History</div>
@@ -12,10 +11,15 @@ export default class HistoryInfo extends React.Component {
           <div className='container'>
             <div className='row'>
               <div className='col-6 text-left'>
-                San Diego
+                { cityLists.map(cityList => (
+                  <div>
+                    <div>{cityList[0]} {cityList[1]}</div>
+                    
+                  </div>
+                )) } 
               </div>
               <div className='col-6 text-right'>
-                09/01/2018 19:04:46
+                
               </div>
             </div>
           </div>
